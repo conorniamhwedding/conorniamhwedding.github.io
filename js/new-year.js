@@ -6,7 +6,7 @@
       return Math.floor(Math.random() * (max - min + 1) + min);
     },
     get period() {
-      var dateFuture = new Date('Sep 20, 2022, 13:00');
+      var dateFuture = new Date('Sep 13, 2022, 13:00');
       var dateNow = new Date();
       var seconds = Math.floor((dateFuture - (dateNow)) / 1000);
       var minutes = Math.floor(seconds / 60);
@@ -15,9 +15,9 @@
       hours = hours - (days * 24);
       minutes = minutes - (days * 24 * 60) - (hours * 60);
       seconds = seconds - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60);
-      var day = new Date('2022-09-20').getDate().toString();
-      var month = (new Date('2022-09-20').getMonth() + 1).toString();
-      var year = new Date('2022-09-20').getFullYear().toString().substr(2);
+      var day = new Date('2022-09-13').getDate().toString();
+      var month = (new Date('2022-09-13').getMonth() + 1).toString();
+      var year = new Date('2022-09-13').getFullYear().toString().substr(2);
       var total = day.concat('.');
       total = total.concat(month);
       total = total.concat('.');
